@@ -13,11 +13,11 @@ const LoginForm = () => {
         <div>
             <h1>LoginForm</h1>
             <form onSubmit={handleSubmit}>
-                <label>Username:</label>
-                <input type='text' value={username}
+                <label htmlFor='username'>Username:</label>
+                <input id='username' type='text' value={username}
                  onChange={(e) => setUsername(e.target.value)} /><br />
-                <label>Password:</label>
-                <input type='password' value={password}
+                <label htmlFor='password'>Password:</label>
+                <input id='password' type='password' value={password}
                  onChange={(e) => setPassword(e.target.value)} /><br />
                 <button type='submit'>Login</button>
             </form>

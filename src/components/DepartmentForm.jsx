@@ -7,8 +7,8 @@ const DepartmentForm = () => {
     <div>
         <h1>Department Form</h1>
         <form>
-            <label>Department:</label>
-            <select value={department} onChange={(e) => setDepartment(e.target.value)}>
+            <label htmlFor='department'>Department:</label>
+            <select id='department' value={department} onChange={(e) => setDepartment(e.target.value)}>
                 <option value="">Select Department</option>
                 <option value="HR">HR</option>
                 <option value="IT">IT</option>
